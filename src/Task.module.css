@@ -1,0 +1,76 @@
+
+.task{
+    margin-bottom: 12px;
+    height: 72px;
+    border-radius: 8px;
+    color: var(--gray-100);
+    padding-left: 16px;
+    background-color: var(--gray-500);
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+/* Aqui estou estilizando a tarefa em si com base no botão de concluão. Em .task p, estou estilizando o container do parágrafo em geral, independente da classe utilizada. Logo abaixo, adiciono classes com as particularidades para o estado da tarefa: completa ou não*/
+.task p{
+    width: 632px;
+    padding-right: 60px;
+    font-style: regular;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.taskIncomplete{
+    transition: .5s;
+    color: var(--gray-100);
+
+}
+
+.taskComplete {
+    transition: .5s;
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+
+
+.task button{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    outline: none;
+    
+
+}
+
+.circleButton:focus{
+    outline: none;
+}
+
+
+
+
+/* .task p{
+    width: 632px;
+    padding-right: 60px;
+    font-style: regular;
+    color: var(--gray-100);
+    line-height: 1.4;
+    font-weight: 400;
+} */
+
+
+
+.trashButton{
+    margin-right: 16px;
+    color: var(--gray-300);
+}
+
+.trashButton:hover{
+    color: var(--danger);
+    transition: .2s;
+
+
+}
