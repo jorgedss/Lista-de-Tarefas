@@ -5,8 +5,7 @@
     margin-top: -27px;
     margin-bottom: 64px;
 
-    width: 736px;
-    height: 54px;
+    width: auto;
     
     display: flex;
     align-items: center;
@@ -62,7 +61,7 @@ textarea::-webkit-scrollbar-thumb:hover {
     width: 90px;
     color: var(--gray-100);
     background-color: var(--blue-dark);
-    height: 100%;
+    height: 52px;
     border-radius: 8px;
     font-weight: bold ;
 
@@ -81,13 +80,28 @@ textarea::-webkit-scrollbar-thumb:hover {
     box-shadow: 0 0 0 2px var(--purple-dark);
 }
 
+@media(max-width:736px){
+
+    .newTask textarea{
+        width: 320px;
+    }
+
+    .newTask{
+        flex-direction: column;
+    }
+
+    .allTasks, .createdAndFinished, .listTasks{
+        width: 320px;
+    }
+    
+}
 
 
 /*/////////////////////*/
 
 .listTasks {
-    width: 736px;
-    height: 300px ;
+    width: auto;
+    height: 300px;
     
 
 
@@ -96,7 +110,6 @@ textarea::-webkit-scrollbar-thumb:hover {
 .createdAndFinished {
     display: flex;
     height: 19px;
-    
     margin-bottom: 24px;
     justify-content: space-between;
 }
@@ -104,6 +117,7 @@ textarea::-webkit-scrollbar-thumb:hover {
 .allTasks {
 
     height: 156px;
+
 
     border-top: 1px solid var(--gray-400);
     border-top-left-radius: 8px;
