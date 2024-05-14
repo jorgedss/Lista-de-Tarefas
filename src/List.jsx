@@ -75,7 +75,7 @@ export function List (){
                     required/>
 
                 <button type='submit'> 
-                    Criar <PlusCircle size={16} weight='bold' color='#F2F2F2'/> 
+                    Criar <PlusCircle size={16} weight='bold'/> 
                 </button>
 
 
