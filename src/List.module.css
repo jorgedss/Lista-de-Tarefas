@@ -101,7 +101,6 @@ textarea::-webkit-scrollbar-thumb:hover {
 
 .listTasks {
     width: auto;
-    height: 300px;
     
 
 
@@ -116,7 +115,7 @@ textarea::-webkit-scrollbar-thumb:hover {
 
 .allTasks {
 
-    height: 156px;
+    height: 200px;
 
 
     border-top: 1px solid var(--gray-400);
